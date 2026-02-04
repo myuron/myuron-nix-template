@@ -18,7 +18,7 @@
   };
 
   outputs = { nixpkgs, flake-utils, agent-skills, anthropic-skills, ... }:
-  flake-utils.lib.eachDefaultSystm (
+  flake-utils.lib.eachDefaultSystem (
     system:
     let
       pkgs = nixpkgs.legacyPackages.${system};
