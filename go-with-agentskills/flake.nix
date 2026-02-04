@@ -31,7 +31,10 @@
       catalog = agentLib.discoverCatalog sources;
       allowlist = agentLib.allowlistFor {
         inherit catalog sources;
-        enable = [ "doc-coauthoring" ];
+        # Add Agent Skills
+        enable = [
+          # "doc-coauthoring"
+        ];
       };
       selection = agentLib.selectSkills {
         inherit catalog allowlist sources;
