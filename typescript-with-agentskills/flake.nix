@@ -52,9 +52,8 @@
       };
       devShells.default = pkgs.mkShell {
         packages = with pkgs; [
-          go
-          gotools
-          golangci-lint
+          nodejs
+          pnpm
         ];
       };
     }
